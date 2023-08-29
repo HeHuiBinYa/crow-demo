@@ -1,0 +1,10 @@
+server:
+  port:
+    8085
+
+mybatis:
+  type-aliases-package: com.crow.model
+
+spring:
+  config:
+    import: application-sharding2.yml
