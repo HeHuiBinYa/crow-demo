@@ -1,9 +1,7 @@
 package com.crow.mapper;
 
 import com.crow.model.User;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -22,7 +20,8 @@ public interface UserMapper {
     public List<User> queryUserList();
 
     @Insert("insert into user(uname,sex,age,birthday) values (#{uname},#{sex},#{age},#{birthday})")
-    public Boolean insertUser(User user);
+    @Options(useGeneratedKeys = true,keyColumn = "uid",keyProperty = "uid")
+    Boolean insertUser(User user);
 
     @Select("select * from user where uname=#{name}")
     User queryUserByUname(String name);

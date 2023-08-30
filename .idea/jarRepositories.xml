@@ -2,14 +2,19 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="ead19d02-ae63-4a69-85b5-97a4b97adb3c" />
+      <option name="name" value="ead19d02-ae63-4a69-85b5-97a4b97adb3c" />
+      <option name="url" value="https://maven.aliyun.com/repository/central" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="a1b290b6-45a2-40a3-9491-bece2e071cd8" />
       <option name="name" value="a1b290b6-45a2-40a3-9491-bece2e071cd8" />
       <option name="url" value="https://maven.aliyun.com/repository/public" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="ead19d02-ae63-4a69-85b5-97a4b97adb3c" />
-      <option name="name" value="ead19d02-ae63-4a69-85b5-97a4b97adb3c" />
-      <option name="url" value="https://maven.aliyun.com/repository/central" />
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/repositories/central/" />
     </remote-repository>
   </component>
 </project>

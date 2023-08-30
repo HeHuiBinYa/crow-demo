@@ -16,15 +16,16 @@ class SharingTestApplicationTests {
     @Test
     void contextLoads() {
         Calendar instance1 = Calendar.getInstance();
-        instance1.set(2020,1,1,0,0,0);
+        instance1.set(2021,1,1,0,0,0);
 
         User user = new User();
-        user.setUname("小五");
-        user.setAge(23);
-        user.setSex("男");
+        user.setUname("小六");
+        user.setAge(26);
+        user.setSex("女");
         user.setBirthday(instance1.getTime());
 
         System.out.println(userMapper.insertUser(user));
+        System.out.println(user.getUid());
     }
 
     @Test
